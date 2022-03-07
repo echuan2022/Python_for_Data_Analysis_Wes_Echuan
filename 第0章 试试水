@@ -1,0 +1,32 @@
+```text
+In [1]: an_apple = 27
+
+In [2]: an_example = 42
+
+In [3]: an<Tab>
+an_apple    and         an_example  any
+```
+
+在这个例子中，IPython呈现出了之前两个定义的变量和Python的关键字和内建的函数`any`。当然，你也可以补全任何对象的方法和属性：
+
+```text
+In [3]: b = [1, 2, 3]
+
+In [4]: b.<Tab>
+b.append  b.count   b.insert  b.reverse
+b.clear   b.extend  b.pop     b.sort
+b.copy    b.index   b.remove
+```
+
+同样也适用于模块：
+
+```text
+In [1]: import datetime
+
+In [2]: datetime.<Tab>
+datetime.date          datetime.MAXYEAR       datetime.timedelta
+datetime.datetime      datetime.MINYEAR       datetime.timezone
+datetime.datetime_CAPI datetime.time          datetime.tzinfo
+```
+
+在Jupyter notebook和新版的IPython（5.0及以上），自动补全功能是下拉框的形式。
